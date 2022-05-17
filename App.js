@@ -20,11 +20,12 @@ import Withdraw from './src/screen/withdraw';
 import * as React from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Loader from './src/component/loader';
-import Paybypoint from './src/screen/Pay by point';
+import Paybyoffer from './src/screen/Pay by offer';
+import Transfers from './src/screen/Transfers';
 const Stack=createStackNavigator();
 const App = () => {
   return(
-    <Privacy />
+    <Qrcode />
   );
  /*
   const [initialRouteName, setInitialRouteName] = React.useState('');

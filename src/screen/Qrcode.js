@@ -2,6 +2,7 @@
 import {QrcodeStyle} from '../styles/QrcodeStyle'
 import React from 'react'
 import {View,Text,Image,TouchableOpacity,TextInput,ImageBackground,ScrollView} from 'react-native'
+import QRCode from 'react-native-qrcode-svg';
 
 const Qrcode = ({navigation}) => {
   const n = () =>
@@ -35,7 +36,6 @@ return (
   <ScrollView>
 
 <View style={QrcodeStyle.root}>
-
 <Image
   style={QrcodeStyle.image}
   source={require('../assets/qrc.png')}
@@ -44,10 +44,11 @@ return (
 الكود الخاص بك </Text>
 
 <View  style={QrcodeStyle.qrcodebackgroung}>
-<Image 
-  style={QrcodeStyle.qrcode}
-  source={require('../assets/qrcode.png')}
-/>
+<QRCode
+      value="http://awesome.link.qr"
+      
+    />
+
 </View>
 
 
