@@ -22,6 +22,18 @@ const Paybyoffer = ({navigation}) => {
   
   
   }
+  const call4 = () =>
+  {
+      navigation.navigate('Offer')
+  
+  
+  }
+  const call5 = () =>
+  {
+      navigation.navigate(' Pay')
+  
+  
+  }
 return (
   <ScrollView>
 
@@ -37,7 +49,7 @@ return (
 هل تود الدفع باستغلالك لأحد العروض ؟</Text>
 
 
-<TouchableOpacity style={{ maxWidth:368,
+<TouchableOpacity onPress={call4} style={{ maxWidth:368,
   height: 35,
   marginTop:90,
   borderWidth:1,
@@ -57,7 +69,7 @@ return (
  color: '#9A4726',
  fontSize: 22,
 marginRight:25,}}>نعم</Text>
-<TouchableOpacity style={{ maxWidth:368,
+<TouchableOpacity onPress={call5} style={{ maxWidth:368,
   height: 35,
   marginTop:40,
   borderWidth:1,

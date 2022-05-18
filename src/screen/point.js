@@ -24,6 +24,12 @@ const callFun3 = () =>
 
 
 }
+const callFun5 = () =>
+{
+    navigation.navigate('PointOffer')
+
+
+}
     return (
         <View style={PointStyle.root}>
 
@@ -46,7 +52,7 @@ const callFun3 = () =>
     
 
 
-        <TouchableOpacity style={{backgroundColor:"#9A4726", paddingVertical:10,marginTop:60,width:170,height:45,marginLeft:120,borderRadius:20}} onPress={handleclick}>
+        <TouchableOpacity onPressIn={callFun5} style={{backgroundColor:"#9A4726", paddingVertical:10,marginTop:60,width:170,height:45,marginLeft:120,borderRadius:20}} onPress={handleclick}>
  <Text style={{textAlign:'center',color:"#FFFFFF",borderColor:"#B57A61",fontSize:18}} >استخدم نقاطك</Text>
  </TouchableOpacity>
 <View >

@@ -22,10 +22,13 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Loader from './src/component/loader';
 import Paybyoffer from './src/screen/Pay by offer';
 import Transfers from './src/screen/Transfers';
+import Offer from './src/screen/offerpage';
+import PointOffer from './src/screen/pointoffer';
 const Stack=createStackNavigator();
 const App = () => {
   return(
-    <Qrcode />
+
+    <Helpcenter />
   );
  /*
   const [initialRouteName, setInitialRouteName] = React.useState('');
@@ -84,6 +87,11 @@ const App = () => {
 <Stack.Screen name='Transmision' component={Transmision} />
 <Stack.Screen name='Point' component={Point} />
 <Stack.Screen name='Sellerhomes' component={Sellerhomes} />
+<Stack.Screen name='Offer' component={Offer} />
+<Stack.Screen name='PointOffer' component={PointOffer} />
+<Stack.Screen name='Transfers' component={Transfers} />
+<Stack.Screen name='Paybyoffer' component={Paybyoffer} />
+<Stack.Screen name='Privacy' component={Privacy} />
 
 
 
@@ -97,8 +105,8 @@ const App = () => {
     </NavigationContainer>
     
   );
- 
-*/
+ */
+
 };
     
 

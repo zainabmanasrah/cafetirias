@@ -34,21 +34,69 @@ return (
 <Text style={Helpcenterstyle.text}>
 كيف يمكننا مساعدتك؟
 </Text>
-
-<TextInput style={Helpcenterstyle.inputfield}
-
-        placeholder="يرجى كتابة المشكلة التي تعاني منها أو السؤال الذي يراودك …"
-
+<Text style={{fontSize:18,color:'#9A4726',marginTop:-190,marginLeft:220}}>
+اسم المستخدم</Text>
+<TextInput style={{maxWidth:368,
+  height: 45,
+  width:220,
+  marginTop:20,
+  borderWidth:1,
+  borderRadius: 10,
+  color:'rgb(154, 71, 38)',
+  borderColor: 'rgb(154, 71, 38)',
+  backgroundColor:'#FFFFFF',
+	borderWidth:1,
+  marginLeft:110,
+  textAlign:'right',}}
+      />
+<Text style={{fontSize:18,color:'#9A4726',marginTop:20,marginRight:80}}>
+ مسؤول الكافتيريا</Text>
+<TextInput placeholder='مرحبا,لدي مشكلة في التطبيق' style={{maxWidth:368,
+  height: 45,
+  width:220,
+  marginTop:20,
+  borderWidth:1,
+  borderRadius: 10,
+  color:'#9A4726',
+  borderColor: 'rgb(154, 71, 38)',
+  backgroundColor:'#FFFFFF',
+	borderWidth:1,
+  marginRight:140,
+  textAlign:'right',}}
+      />
+      <Text style={{fontSize:18,color:'#9A4726',marginTop:30,marginLeft:220}}>
+اسم المستخدم</Text>
+<TextInput placeholder='أهلا,كيف يمكنني مساعدتك'  style={{maxWidth:368,
+  height: 45,
+  width:220,
+  marginTop:20,
+  borderWidth:1,
+  borderRadius: 10,
+  color:'#9A4726',
+  borderColor: 'rgb(154, 71, 38)',
+  backgroundColor:'#FFFFFF',
+	borderWidth:1,
+  marginLeft:110,
+  textAlign:'right',}}
+      />
+      <Text style={{fontSize:18,color:'#9A4726',marginTop:20,marginRight:80}}>
+ مسؤول الكافتيريا</Text>
+<TextInput style={{maxWidth:368,
+  height: 45,
+  width:220,
+  marginTop:20,
+  borderWidth:1,
+  borderRadius: 10,
+  color:'rgb(154, 71, 38)',
+  borderColor: 'rgb(154, 71, 38)',
+  backgroundColor:'#FFFFFF',
+	borderWidth:1,
+  marginRight:140,
+  textAlign:'right',}}
       />
 
-<TouchableOpacity style={Helpcenterstyle.but}>
-
-</TouchableOpacity>
-<Text style={Helpcenterstyle.buttext}>
-إرسال</Text>
-
 <View >
-    <TouchableOpacity style={{marginTop:130,justifyContent:'center',flexDirection:'row',justifyContent:'space-around',borderRadius:20,width:420,height:70,backgroundColor:'#FAF4EE'}} activeOpacity = { .5 } onPress={callFun}>
+    <TouchableOpacity style={{marginTop:10,justifyContent:'center',flexDirection:'row',justifyContent:'space-around',borderRadius:20,width:420,height:70,backgroundColor:'#FAF4EE'}} activeOpacity = { .5 } onPress={callFun}>
         <Image source={require('../assets/qr.png')}
         style={{width:50,height:50,marginRight:250,marginTop:0}}
 />
