@@ -38,20 +38,32 @@ text: {
    
 inputfield:{
   maxWidth:368,
-  height: 55,
+  height: 155,
+  width:270,
   marginTop:-185,
   borderWidth:1,
   borderRadius: 10,
-  paddingHorizontal:17,
   color:'rgb(154, 71, 38)',
   borderColor: 'rgb(154, 71, 38)',
   backgroundColor:'#FAF4EE',
 	borderWidth:1,
   marginRight:20,
   textAlign:'right',
-
 },
-    
+inputfields:{
+  maxWidth:368,
+  height: 155,
+  width:270,
+  marginTop:85,
+  borderWidth:1,
+  borderRadius: 10,
+  color:'rgb(154, 71, 38)',
+  borderColor: 'rgb(154, 71, 38)',
+  backgroundColor:'#FAF4EE',
+	borderWidth:1,
+  marginRight:20,
+  textAlign:'right',
+}, 
 
 but:{
   marginTop:200,

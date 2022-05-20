@@ -3,7 +3,7 @@ import {Helpcenterstyle} from '../styles/Helpcenterstyle'
 import React from 'react'
 import {View,Text,Image,TouchableOpacity,TextInput,ImageBackground,ScrollView} from 'react-native'
 
-const Helpcenter = ({navigation}) => {
+const Help = ({navigation}) => {
   const callFun = () =>
   {
       navigation.navigate('Noti')
@@ -19,8 +19,10 @@ const Helpcenter = ({navigation}) => {
   const callFun3 = () =>
   {
       navigation.navigate('Setting')
-  
-  
+  }
+  const callFun4 = () =>
+  {
+      navigation.navigate('Helpcenter')
   }
 return (
   <ScrollView>
@@ -32,32 +34,31 @@ return (
   source={require('../assets/D3.png')}
 />
 <Text style={Helpcenterstyle.text}>
-كيف يمكننا مساعدتك؟
-</Text>
+اكتب مشكلتك</Text>
+<TextInput style={{ maxWidth:368,
+  height: 155,
+  width:290,
+  marginTop:-185,
+  borderWidth:1,
+  borderRadius: 10,
+  color:'rgb(154, 71, 38)',
+  borderColor: 'rgb(154, 71, 38)',
+  backgroundColor:'#FAF4EE',
+	borderWidth:1,
+  marginRight:20,
+  textAlign:'right',}}
+  placeholder="مرحبا,لدي مسكلة في التطبيق هل يمكنك مساعدتي"></TextInput>
 
-<Text style={Helpcenterstyle.inputfield}
 
-        placeholder="يرجى كتابة المشكلة التي تعاني منها أو السؤال الذي يراودك …"
 
-      />
 
-<Text style={Helpcenterstyle.inputfields}
-
-        placeholder="يرجى كتابة المشكلة التي تعاني منها أو السؤال الذي يراودك …"
-
-      />
-      <Text style={Helpcenterstyle.inputfields}
-
-placeholder="يرجى كتابة المشكلة التي تعاني منها أو السؤال الذي يراودك …"
-
-/>
-<TouchableOpacity style={Helpcenterstyle.but}>
+<TouchableOpacity onPress={callFun4} style={Helpcenterstyle.but}>
 </TouchableOpacity>
 <Text style={Helpcenterstyle.buttext}>
-اطلب مساعدة</Text>
+ إرسال</Text>
 
 <View >
-    <TouchableOpacity style={{marginTop:100,justifyContent:'center',flexDirection:'row',justifyContent:'space-around',borderRadius:20,width:420,height:70,backgroundColor:'#FAF4EE'}} activeOpacity = { .5 } onPress={callFun}>
+    <TouchableOpacity style={{marginTop:30,justifyContent:'center',flexDirection:'row',justifyContent:'space-around',borderRadius:20,width:420,height:70,backgroundColor:'#FAF4EE'}} activeOpacity = { .5 } onPress={callFun}>
         <Image source={require('../assets/not.png')}
         style={{width:50,height:50,marginRight:250,marginTop:0}}
 />
@@ -83,4 +84,4 @@ placeholder="يرجى كتابة المشكلة التي تعاني منها أ�
 
  }
 
- export default Helpcenter;
+ export default Help;
