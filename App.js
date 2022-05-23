@@ -24,14 +24,14 @@ import Paybyoffer from './src/screen/Pay by offer';
 import Transfers from './src/screen/Transfers';
 import Offer from './src/screen/offerpage';
 import PointOffer from './src/screen/pointoffer';
-import Qrcodes from './src/screen/Qrcodes';
 import Help from './src/screen/help';
-const Stack=createStackNavigator();
+import Qrcodes from './src/screen/QrCodes';
+const Stack = createStackNavigator();
 const App = () => {
- return(
-   <Help />
- );
-  /*
+    return ( 
+      <AdsAndOffer / >
+    );
+    /*
   const [initialRouteName, setInitialRouteName] = React.useState('');
 
   React.useEffect(() => {
@@ -109,6 +109,6 @@ const App = () => {
  
 */
 };
-    
+
 
 export default App;
