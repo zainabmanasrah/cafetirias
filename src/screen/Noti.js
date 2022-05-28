@@ -12,7 +12,7 @@ const Noti = ({navigation}) => {
   }
   const callFun2 = () =>
   {
-      navigation.navigate('Sellerhome')
+      navigation.navigate('Sellerhomes')
   
   
   }

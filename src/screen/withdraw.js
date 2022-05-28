@@ -4,13 +4,13 @@ import { TransmissionStyle } from '../styles/transmissionstyle'
 const Withdraw = ({navigation}) => {
   const callFun = () =>
 {
-    navigation.navigate('Qrcodecustomer')
+    navigation.navigate('Qrcodeseller')
 
 
 }
 const callFun2 = () =>
 {
-    navigation.navigate('Customerhome')
+    navigation.navigate('Sellerhomes')
 
 
 }

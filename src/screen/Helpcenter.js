@@ -12,7 +12,7 @@ const Helpcenter = ({navigation}) => {
   }
   const callFun2 = () =>
   {
-      navigation.navigate('Sellerhome')
+      navigation.navigate('Customerhome')
   
   
   }
@@ -32,8 +32,7 @@ return (
   source={require('../assets/D3.png')}
 />
 <Text style={Helpcenterstyle.text}>
-كيف يمكننا مساعدتك؟
-</Text>
+تواصل معنا عبر الايميل</Text>
 <Text style={{marginTop:-180,
     color:'rgb(154, 71, 38)',
    fontWeight: '400',
@@ -49,11 +48,7 @@ return (
       marginBottom:20,
       textAlign:'right',
       marginTop:30,}}></TextInput>
-     
-<TouchableOpacity style={Helpcenterstyle.but}>
-</TouchableOpacity>
-<Text style={Helpcenterstyle.buttext}>
- ارسال</Text>
+   
 
 <View >
     <TouchableOpacity style={{marginTop:30,justifyContent:'center',flexDirection:'row',justifyContent:'space-around',borderRadius:20,width:420,height:70,backgroundColor:'#FAF4EE'}} activeOpacity = { .5 } onPress={callFun}>

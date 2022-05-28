@@ -15,7 +15,7 @@ const Qrcodeseller = ({navigation}) => {
 }
 const callFun2 = () =>
 {
-    navigation.navigate('Customerhome')
+    navigation.navigate('Sellerhomes')
 
 
 }

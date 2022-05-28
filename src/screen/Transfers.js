@@ -6,7 +6,7 @@ import {View,Text,Image,TouchableOpacity,TextInput,ScrollView} from 'react-nativ
 const Transfers = ({navigation}) => {
   const callFun = () =>
   {
-      navigation.navigate('Qrcodecustomer')
+      navigation.navigate('Qrcodeseller')
   }
   const callFun2 = () =>
   {
