@@ -1,7 +1,7 @@
 
 import {Helpcenterstyle} from '../styles/Helpcenterstyle'
 import React from 'react'
-import {View,Text,Image,TouchableOpacity,ScrollView} from 'react-native'
+import {View,Text,Image,TouchableOpacity,ScrollView,TextInput} from 'react-native'
 
 const Helpcenter = ({navigation}) => {
   const callFun = () =>

@@ -31,7 +31,7 @@ import LoginSeller from './src/screen/loginSeller';
 const Stack = createStackNavigator();
 const App = () => {
 
-  const [initialRouteName, setInitialRouteName] = React.useState('Home');
+  const [initialRouteName, setInitialRouteName] = React.useState('Second');
 
   React.useEffect(() => {
     setTimeout(() => {
