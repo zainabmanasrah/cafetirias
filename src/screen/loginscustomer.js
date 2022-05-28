@@ -6,7 +6,7 @@ import Input from '../component/input';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Loader from '../component/loader';
 
-const LoginScreen = ({navigation}) => {
+const LoginScreencustomer = ({navigation}) => {
   const [inputs, setInputs] = React.useState({fullname: '', password: ''});
   const [errors, setErrors] = React.useState({});
   const [loading, setLoading] = React.useState(false);
@@ -104,4 +104,4 @@ const LoginScreen = ({navigation}) => {
   );
 };
 
-export default LoginScreen;
+export default LoginScreencustomer;

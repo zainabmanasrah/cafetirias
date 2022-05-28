@@ -7,7 +7,7 @@ import { ScrollView } from 'react-native-gesture-handler'
 const Privacy = ({navigation}) => {
   const callFun = () =>
 {
-    navigation.navigate('Qrcode')
+    navigation.navigate('Qrcodecustomer')
 
 
 }

@@ -4,21 +4,14 @@ import React from 'react'
 import {View,Text,Image,TouchableOpacity,TextInput,ImageBackground,ScrollView} from 'react-native'
 import QRCode from 'react-native-qrcode-svg';
 
-const Qrcode = ({navigation}) => {
+const Qrcodecustomer = ({navigation}) => {
   const n = () =>
   {
-      navigation.navigate('Transmision') 
-      
-      
-    
-  
-  
+      navigation.navigate('Qrcodescustomer',{userType:'seller'})   
   }
   const callFun = () =>
 {
-    navigation.navigate('Qrcode')
-
-
+    navigation.navigate('Qrcodecustomer')
 }
 const callFun2 = () =>
 {
@@ -85,4 +78,4 @@ return (
 
  }
 
- export default Qrcode;
+ export default Qrcodecustomer;

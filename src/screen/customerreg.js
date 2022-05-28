@@ -65,7 +65,7 @@ const CustomerReg = ({navigation}) => {
       try {
         setLoading(false);
         AsyncStorage.setItem('userData', JSON.stringify(inputs));
-        navigation.navigate('LoginScreen');
+        navigation.navigate('LoginScreencustomer');
       } catch (error) {
         Alert.alert('Error', 'Something went wrong');
       }
@@ -84,7 +84,7 @@ const CustomerReg = ({navigation}) => {
       <ScrollView
         contentContainerStyle={{paddingTop: 50, paddingHorizontal: 20}}>
         <Text style={{color: COLORS.brwon, marginLeft:30,textAlign:'center',fontSize: 30,marginTop:0}}>
-     إنشاء حساب للبائع
+    إنشاء حساب للزبون
         </Text>
        
         <View style={{marginVertical: 20}}>
@@ -145,7 +145,7 @@ const CustomerReg = ({navigation}) => {
           />
           <Button title="إنشاء حساب" onPress={validate} />
           <Text
-            onPress={() => navigation.navigate('LoginScreen')}
+            onPress={() => navigation.navigate('LoginScreencustomer')}
             style={{
               color: COLORS.brwon,
               fontWeight: 'bold',

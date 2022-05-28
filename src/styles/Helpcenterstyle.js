@@ -66,18 +66,18 @@ inputfields:{
 }, 
 
 but:{
-  marginTop:200,
+  marginTop:20,
   marginRight:10,
   backgroundColor:'rgb(154, 71, 38)',
   borderRadius:70,
-  height:50,
-  width:310,
+  height:40,
+  width:140,
 
 
  },
 
  buttext:{
- marginTop:-40,
+ marginTop:-35,
  color: 'rgb(250, 244, 238)',
  fontSize: 22,
  fontWeight:'700',

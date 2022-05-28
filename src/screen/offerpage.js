@@ -2,21 +2,24 @@ import React, {useState} from 'react';
 import {View, Text,TouchableOpacity,StyleSheet,TextInput} from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 
-  
-const Offer= () => {
+
+const Offer= ({navigation}) => {
 
   const [Open1, setOpen1] = useState(false);
   const [value1, setValue1] = useState(null);
   const [numbers, setNumbers] = useState([
-    {label: 'Apple', value: 'apple'},
-    {label: 'Banana', value: 'banana'},
-    {label: '1', value: '1'},
-    {label: '2', value: '2'},
-    {label: '3', value: '3'},
-    {label: '4', value: '4'}
+    {label: 'Test', value: 'apple'},
+    {label: 'first test', value: 'banana'},
+
+
   ]);
 
-
+  const k = () =>
+  {
+      navigation.navigate('Customerhome')
+  
+  
+  }
   return (
        <View style={styles.container}>
       <Text style={styles.text} > حدد العرض الذي تود استغلاله من القائمة</Text>
@@ -39,7 +42,7 @@ const Offer= () => {
 
       </View>
 
-      <TouchableOpacity
+      <TouchableOpacity onPress={k}
         style={{left:-12,backgroundColor:"#9A4726", paddingVertical:-32,top:120,height:42,width:330,marginLeft:25,borderRadius:5,position:'relative'}}>
         <Text style={{textAlign:'center',color:"white",borderColor:"#FDE9D9",fontSize:20,top:8}} >تأكيد</Text>
        </TouchableOpacity>

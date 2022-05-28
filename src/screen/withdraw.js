@@ -1,21 +1,10 @@
 import React, { Component } from 'react'
 import { Text, View,Image,ImageBackground,TextInput,TouchableOpacity,ScrollView } from 'react-native'
 import { TransmissionStyle } from '../styles/transmissionstyle'
-const handleclick = () => {
-  console.log("click")
-}
-
-
 const Withdraw = ({navigation}) => {
   const callFun = () =>
 {
-    navigation.navigate('Qrcode')
-
-
-}
-const code = () =>
-{
-    navigation.navigate('Qrcode')
+    navigation.navigate('Qrcodecustomer')
 
 
 }
@@ -44,10 +33,10 @@ height:190,marginRight:100}}>
  
 
  <View style={TransmissionStyle.buttons}>
- <TouchableOpacity style={{backgroundColor:"#9A4726", paddingVertical:10,marginTop:100,width:130,height:45,marginLeft:30,borderRadius:20}} onPress={handleclick}>
+ <TouchableOpacity style={{backgroundColor:"#9A4726", paddingVertical:10,marginTop:100,width:130,height:45,marginLeft:30,borderRadius:20}} onPress={callFun2}>
 <Text style={{textAlign:'center',color:"white",justifyContent:"space-around",fontSize:20}} >تأكيد</Text>
 </TouchableOpacity>
-<TouchableOpacity onPressIn={callFun2} style={{backgroundColor:"#FDE9D9", paddingVertical:10,marginTop:100,width:130,height:45,marginLeft:60,borderRadius:20}} onPress={handleclick}>
+<TouchableOpacity onPressIn={callFun2} style={{backgroundColor:"#FDE9D9", paddingVertical:10,marginTop:100,width:130,height:45,marginLeft:60,borderRadius:20}} onPress={callFun2}>
 <Text style={{textAlign:'center',color:"#9A4726",borderColor:"#B57A61",fontSize:20}} >إلغاء</Text>
 </TouchableOpacity>
 

@@ -2,13 +2,11 @@ import React, { Component } from 'react'
 import {  View,Image,Text,TouchableOpacity,ImageBackground } from 'react-native'
 import Position from 'react-native/Libraries/Components/Touchable/Position'
 import { PointStyle } from '../styles/pointstyle'
-const handleclick = () => {
-    console.log("click")
-}
+
 const Point = ({navigation}) => {
     const callFun = () =>
 {
-    navigation.navigate('Qrcode')
+    navigation.navigate('Qrcodecustomer')
 
 
 }
@@ -52,7 +50,7 @@ const callFun5 = () =>
     
 
 
-        <TouchableOpacity onPressIn={callFun5} style={{backgroundColor:"#9A4726", paddingVertical:10,marginTop:60,width:170,height:45,marginLeft:120,borderRadius:20}} onPress={handleclick}>
+        <TouchableOpacity onPressIn={callFun5} style={{backgroundColor:"#9A4726", paddingVertical:10,marginTop:60,width:170,height:45,marginLeft:120,borderRadius:20}}>
  <Text style={{textAlign:'center',color:"#FFFFFF",borderColor:"#B57A61",fontSize:18}} >استخدم نقاطك</Text>
  </TouchableOpacity>
 <View >

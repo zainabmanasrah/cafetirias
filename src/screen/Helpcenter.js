@@ -1,7 +1,8 @@
 
 import {Helpcenterstyle} from '../styles/Helpcenterstyle'
 import React from 'react'
-import {View,Text,Image,TouchableOpacity,TextInput,ImageBackground,ScrollView} from 'react-native'
+import {View,Text,Image,TouchableOpacity,ScrollView} from 'react-native'
+import { TextInput } from 'react-native-gesture-handler'
 
 const Helpcenter = ({navigation}) => {
   const callFun = () =>
@@ -34,30 +35,43 @@ return (
 <Text style={Helpcenterstyle.text}>
 كيف يمكننا مساعدتك؟
 </Text>
-
-<Text style={Helpcenterstyle.inputfield}
-
-        placeholder="يرجى كتابة المشكلة التي تعاني منها أو السؤال الذي يراودك …"
-
-      />
-
-<Text style={Helpcenterstyle.inputfields}
-
-        placeholder="يرجى كتابة المشكلة التي تعاني منها أو السؤال الذي يراودك …"
-
-      />
-      <Text style={Helpcenterstyle.inputfields}
-
-placeholder="يرجى كتابة المشكلة التي تعاني منها أو السؤال الذي يراودك …"
-
-/>
+<Text style={{marginTop:-180,
+    color:'rgb(154, 71, 38)',
+   fontWeight: '400',
+   fontSize: 25,marginLeft:240,
+   }}>
+الايميل</Text>
+<TextInput placeholder='###############' style={{ borderColor:"rgb(154, 71, 38)",
+      color:"#707070",
+      borderWidth:1,
+      marginLeft:90,
+      width:250,
+      height:50,
+      marginBottom:20,
+      textAlign:'right',
+      marginTop:30,}}></TextInput>
+      <Text style={{
+    color:'rgb(154, 71, 38)',
+   fontWeight: '400',
+   fontSize: 25,marginLeft:240,
+   }}>
+الرسالة</Text>
+<TextInput placeholder='###############' style={{ borderColor:"rgb(154, 71, 38)",
+      color:"#707070",
+      borderWidth:1,
+      marginLeft:90,
+      width:250,
+      height:120,
+      marginBottom:20,
+      textAlign:'right',
+      marginTop:30,}}></TextInput>
 <TouchableOpacity style={Helpcenterstyle.but}>
 </TouchableOpacity>
 <Text style={Helpcenterstyle.buttext}>
-اطلب مساعدة</Text>
+ ارسال</Text>
 
 <View >
-    <TouchableOpacity style={{marginTop:100,justifyContent:'center',flexDirection:'row',justifyContent:'space-around',borderRadius:20,width:420,height:70,backgroundColor:'#FAF4EE'}} activeOpacity = { .5 } onPress={callFun}>
+    <TouchableOpacity style={{marginTop:30,justifyContent:'center',flexDirection:'row',justifyContent:'space-around',borderRadius:20,width:420,height:70,backgroundColor:'#FAF4EE'}} activeOpacity = { .5 } onPress={callFun}>
         <Image source={require('../assets/not.png')}
         style={{width:50,height:50,marginRight:250,marginTop:0}}
 />

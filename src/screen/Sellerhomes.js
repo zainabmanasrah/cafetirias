@@ -7,7 +7,7 @@ import Button from '../component/button';
 const Sellerhomes = ({navigation}) => {
   const callFun = () =>
   {
-      navigation.navigate('Qrcode')
+      navigation.navigate('Qrcodeseller')
   
   
   }
@@ -30,7 +30,7 @@ const handleclick2 = () => {
 }
 
 const handleclick3 = () => {
-    navigation.navigate('Qrcode')
+    navigation.navigate('Qrcodeseller')
 
 }
 const handleclick4 = () => {

@@ -6,7 +6,7 @@ import {View,Text,Image,TouchableOpacity,TextInput,ScrollView} from 'react-nativ
 const Paybyoffer = ({navigation}) => {
   const callFun = () =>
   {
-      navigation.navigate('Qrcode')
+      navigation.navigate('Qrcodecustomer')
   
   
   }
@@ -30,7 +30,7 @@ const Paybyoffer = ({navigation}) => {
   }
   const call5 = () =>
   {
-      navigation.navigate(' Pay')
+      navigation.navigate('Pay')
   
   
   }

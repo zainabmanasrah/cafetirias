@@ -6,7 +6,7 @@ import {View,Text,Image,TextInput, ScrollView,TouchableOpacity} from 'react-nati
 const AdsAndOffer = ({navigation}) => {
   const callFun = () =>
   {
-      navigation.navigate('Qrcode')
+      navigation.navigate('Qrcodecustomer')
   
   
   }
@@ -31,13 +31,7 @@ return (
   source={require('../assets/ads.png')}
 />
 
-<Text style={{ 
-       borderColor: 'rgb(154, 71, 38)',marginLeft:80,padding:8,
-       borderWidth:1,marginBottom:50,color:'#9A4726',textAlign:'center',marginTop:140 ,width:250,borderRadius:20,
-       height:40,}}>
-اشتري أي نوع من أنواع التوست ب ١٠ نقاط
 
-</Text>
 
 <Text style={AdsAndOfferStyle.text}>
 وصف العرض
@@ -54,15 +48,7 @@ return (
 وصف العرض
 </Text>
 
-<Text style={AdsAndOfferStyle.text}>
 
-وصف العرض
-</Text>
-
-<Text style={AdsAndOfferStyle.text}>
-وصف العرض
-
-</Text>
 
 </View>
 

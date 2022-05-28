@@ -6,9 +6,7 @@ import {View,Text,Image,TouchableOpacity,TextInput,ScrollView} from 'react-nativ
 const Transfers = ({navigation}) => {
   const callFun = () =>
   {
-      navigation.navigate('Qrcode')
-  
-  
+      navigation.navigate('Qrcodecustomer')
   }
   const callFun2 = () =>
   {
@@ -30,7 +28,7 @@ const Transfers = ({navigation}) => {
   }
   const call2 = () =>
   {
-      navigation.navigate('Withdraw ')
+      navigation.navigate('Withdraw')
   
   
   }
@@ -54,9 +52,7 @@ return (
   marginTop:90,
   borderWidth:1,
   borderRadius: 10,
-  width:220
-  ,
-
+  width:220,
   color:'rgb(154, 71, 38)',
   borderColor: 'rgb(154, 71, 38)',
   backgroundColor:'#FFFFFF',

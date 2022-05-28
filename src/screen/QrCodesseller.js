@@ -3,8 +3,7 @@ import React, { useState, useEffect } from 'react';
 import {QrcodeStyle} from '../styles/QrcodeStyle'
 import { Text, View, StyleSheet, Button,ScrollView,TouchableOpacity,Image } from 'react-native';
 import { BarCodeScanner } from 'expo-barcode-scanner';
-const Qrcodes = ({navigation}) => {
-
+const Qrcodesseller = ({navigation,route}) => {
 const [hasPermission, setHasPermission] = useState(null);
     const [scanned, setScanned] = useState(false);
   
@@ -17,7 +16,25 @@ const [hasPermission, setHasPermission] = useState(null);
   
     const handleBarCodeScanned = ({ type, data }) => {
       setScanned(true);
-      alert(`Bar code with type ${type} and data ${data} has been scanned!`);
+const x=JSON.parse(data)
+const userType=route.params.userType;
+if (x.userType===userType)
+      {
+        if (userType==='student')
+        {
+navigation.navigate('Transmision',{
+  data
+})
+
+        }
+        else if(userType==='seller'){
+          alert('seller');
+        }
+      }
+      else{
+        alert( `in valid ${data}`);
+
+      }
     };
   
     if (hasPermission === null) {
@@ -52,4 +69,4 @@ return (
 
  }
 
- export default Qrcodes
+ export default Qrcodesseller

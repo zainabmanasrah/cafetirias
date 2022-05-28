@@ -1,15 +1,17 @@
 
-import {Settingstyle} from '../styles/SettingStyle'
+import {QrcodeStyle} from '../styles/QrcodeStyle'
 import React from 'react'
-import {View,Text,Image,ImageBackground,TouchableOpacity,ScrollView} from 'react-native'
+import {View,Text,Image,TouchableOpacity,TextInput,ImageBackground,ScrollView} from 'react-native'
+import QRCode from 'react-native-qrcode-svg';
 
-
-const Setting = ({navigation}) => {
+const Qrcodeseller = ({navigation}) => {
+  const n = () =>
+  {
+      navigation.navigate('Qrcodesseller',{userType:'student'})   
+  }
   const callFun = () =>
 {
-    navigation.navigate('Qrcodecustomer')
-
-
+    navigation.navigate('Qrcodeseller')
 }
 const callFun2 = () =>
 {
@@ -23,48 +25,34 @@ const callFun3 = () =>
 
 
 }
-const callFun4 = () =>
-{
-    navigation.navigate('Helpcenter')
-
-
-}
-const callFun5 = () =>
-{
-    navigation.navigate('Privacy')
-
-
-}
 return (
   <ScrollView>
 
-<View style={Settingstyle.root}>
-
+<View style={QrcodeStyle.root}>
 <Image
-  style={Settingstyle.image}
-  source={require('../assets/set.png')}
+  style={QrcodeStyle.image}
+  source={require('../assets/qrc.png')}
 />
+<Text style={QrcodeStyle.text}>
+الكود الخاص بك </Text>
+
+<View  style={QrcodeStyle.qrcodebackgroung}>
+<QRCode
+      value="http://awesome.link.qr"
+      
+    />
+
+</View>
 
 
-<Text onPress={callFun4} style={Settingstyle.text}>
-مركز المساعدة
-</Text>
 
-<Text onPress={callFun5} 
-style={Settingstyle.text2}>
-الامان و الخصوصية
-
-</Text>
-
-<Text 
-
-style={Settingstyle.text3}>
-تسجيل الخروج
-
-</Text>
+<TouchableOpacity onPress={n} style={QrcodeStyle.but}>
+<Text style={QrcodeStyle.buttext}>
+مسح QR Code</Text>
+</TouchableOpacity>
 
 <View >
-    <TouchableOpacity style={{marginTop:80,justifyContent:'center',flexDirection:'row',justifyContent:'space-around',borderRadius:20,width:420,height:70,backgroundColor:'#FAF4EE'}} activeOpacity = { .5 } onPress={callFun}>
+    <TouchableOpacity style={{marginTop:40,justifyContent:'center',flexDirection:'row',justifyContent:'space-around',borderRadius:20,width:420,height:70,backgroundColor:'#FAF4EE'}} activeOpacity = { .5 } onPress={callFun}>
         <Image source={require('../assets/qr.png')}
         style={{width:50,height:50,marginRight:250,marginTop:0}}
 />
@@ -84,10 +72,10 @@ style={Settingstyle.text3}>
     </TouchableOpacity>
 </View>
 </View>
-  </ScrollView>
 
+  </ScrollView>
 )
 
  }
 
- export default Setting;
+ export default Qrcodeseller;

@@ -6,16 +6,16 @@ const handleclick = () => {
 }
 
 
-const Transmision = ({navigation}) => {
+const Transmision = ({navigation,route}) => {
   const callFun = () =>
 {
-    navigation.navigate('Qrcode')
+    navigation.navigate('Qrcodeseller')
 
 
 }
 const code = () =>
 {
-    navigation.navigate('Qrcode')
+    navigation.navigate('Qrcodeseller')
 
 
 }

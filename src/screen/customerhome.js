@@ -7,7 +7,7 @@ import Button from '../component/button';
 const Customerhome = ({navigation}) => {
   const callFun = () =>
   {
-      navigation.navigate('Qrcode')
+      navigation.navigate('Qrcodecustomer')
   
   
   }
@@ -23,20 +23,14 @@ const Customerhome = ({navigation}) => {
   
   
   }
-  const handleclick = () => {
-    navigation.navigate('Noti')
-
-}
+ 
 const handleclick2 = () => {
     navigation.navigate('AdsAndOffer')
 
 }
-const handleclicks = () => {
-    navigation.navigate('Helpcenter')
 
-}
 const handleclick3 = () => {
-    navigation.navigate('Qrcode')
+    navigation.navigate('Qrcodecustomer')
 
 }
 const handleclick4 = () => {
@@ -104,9 +98,6 @@ source={require('../assets/qr.png')}
 
 </View>
 <View style={{justifyContent:'center',alignItems:'center',flexDirection:'row',justifyContent:'space-around',marginBottom:80}}>
-
-
-
 
 </View>
 <View style={{justifyContent:'center',alignItems:'center',flexDirection:'row',justifyContent:'space-around',marginBottom:10}} >

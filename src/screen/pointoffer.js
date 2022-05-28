@@ -3,7 +3,8 @@ import {View, Text,TouchableOpacity,StyleSheet} from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 
   
-const PointOffer= () => {
+const PointOffer= ({navigation}) => {
+
 
   const [Open1, setOpen1] = useState(false);
   const [value1, setValue1] = useState(null);
@@ -15,7 +16,10 @@ const PointOffer= () => {
     {label: '3', value: '3'},
     {label: '4', value: '4'}
   ]);
-
+  const callFun2 = () =>
+  {
+      navigation.navigate('Customerhome')
+  }
 
   return (
        <View style={styles.container}>
@@ -37,7 +41,7 @@ const PointOffer= () => {
       </View>
 
       </View>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity onPress={callFun2} style={styles.button}>
         <Text style={styles.buttontext} >تأكيد</Text>
        </TouchableOpacity>
       </View>

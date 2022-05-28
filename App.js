@@ -10,11 +10,10 @@ import Helpcenter from './src/screen/Helpcenter';
 import Privacy from './src/screen/Privacy';
 import AdsAndOffer from './src/screen/AdsAndOffer';
 import Setting from './src/screen/Setting';
-import Qrcode from './src/screen/Qrcode';
 import Second from './src/screen/Second';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import LoginScreen from './src/screen/logins';
+import LoginScreencustomer from './src/screen/loginscustomer';
 import Sellerhomes from './src/screen/Sellerhomes';
 import Withdraw from './src/screen/withdraw';
 import * as React from 'react';
@@ -24,14 +23,13 @@ import Paybyoffer from './src/screen/Pay by offer';
 import Transfers from './src/screen/Transfers';
 import Offer from './src/screen/offerpage';
 import PointOffer from './src/screen/pointoffer';
-import Help from './src/screen/help';
-import Qrcodes from './src/screen/QrCodes';
+import Qrcodesseller from './src/screen/QrCodesseller';
+import Qrcodecustomer from './src/screen/Qrcodecustomer';
+import Qrcodescustomer from './src/screen/Qrcodescustomer';
+import Qrcodeseller from './src/screen/Qrcodeseller';
 const Stack = createStackNavigator();
 const App = () => {
-    return ( 
-      <AdsAndOffer / >
-    );
-    /*
+
   const [initialRouteName, setInitialRouteName] = React.useState('');
 
   React.useEffect(() => {
@@ -48,7 +46,7 @@ const App = () => {
         if (userData.loggedIn) {
           setInitialRouteName('Customerhome');
         } else {
-          setInitialRouteName('LoginScreen');
+          setInitialRouteName('LoginScreencustomer');
         }
       } else {
         setInitialRouteName('CustomerReg');
@@ -57,9 +55,7 @@ const App = () => {
       setInitialRouteName('CustomerReg');
     }
   };
-
-  return (
-    
+  return (  
     <NavigationContainer>
       {!initialRouteName ? (
         <Loader visible={true} />
@@ -74,8 +70,8 @@ const App = () => {
               component={CustomerReg}
             />
             <Stack.Screen
-              name="LoginScreen"
-              component={LoginScreen}
+              name="LoginScreencustomer"
+              component={LoginScreencustomer}
             />
             <Stack.Screen
               name="Customerhome"
@@ -83,7 +79,8 @@ const App = () => {
             />
             <Stack.Screen name="Helpcenter" component={Helpcenter} />
 <Stack.Screen name='AdsAndOffer' component={AdsAndOffer} />
-<Stack.Screen name='Qrcode' component={Qrcode} />
+<Stack.Screen name='Qrcodeseller' component={Qrcodeseller} />
+<Stack.Screen name='Qrcodecustomer' component={Qrcodecustomer} />
 <Stack.Screen name='Setting' component={Setting} />
 <Stack.Screen name='Transmision' component={Transmision} />
 <Stack.Screen name='Point' component={Point} />
@@ -93,6 +90,10 @@ const App = () => {
 <Stack.Screen name='Transfers' component={Transfers} />
 <Stack.Screen name='Paybyoffer' component={Paybyoffer} />
 <Stack.Screen name='Privacy' component={Privacy} />
+<Stack.Screen name='Pay' component={Pay} />
+<Stack.Screen name='Qrcodesseller' component={Qrcodesseller} userType={'student'} />
+<Stack.Screen name='Qrcodescustomer' component={Qrcodescustomer} userType={'seller'} />
+
 
 
 
@@ -106,8 +107,7 @@ const App = () => {
     </NavigationContainer>
     
   );
- 
-*/
+  
 };
 
 
