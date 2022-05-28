@@ -27,14 +27,15 @@ import Qrcodesseller from './src/screen/QrCodesseller';
 import Qrcodecustomer from './src/screen/Qrcodecustomer';
 import Qrcodescustomer from './src/screen/Qrcodescustomer';
 import Qrcodeseller from './src/screen/Qrcodeseller';
+import LoginSeller from './src/screen/loginSeller';
 const Stack = createStackNavigator();
 const App = () => {
 
-  const [initialRouteName, setInitialRouteName] = React.useState('');
+  const [initialRouteName, setInitialRouteName] = React.useState('Home');
 
   React.useEffect(() => {
     setTimeout(() => {
-      authUser();
+      //authUser();
     }, 2000);
   }, []);
 
@@ -93,7 +94,11 @@ const App = () => {
 <Stack.Screen name='Pay' component={Pay} />
 <Stack.Screen name='Qrcodesseller' component={Qrcodesseller} userType={'student'} />
 <Stack.Screen name='Qrcodescustomer' component={Qrcodescustomer} userType={'seller'} />
+<Stack.Screen name='Second' component={Second} />
+<Stack.Screen name='LoginSeller' component={LoginSeller} />
+<Stack.Screen name='Withdraw' component={Withdraw} />
 
+<Stack.Screen name='Home' component={Home} />
 
 
 

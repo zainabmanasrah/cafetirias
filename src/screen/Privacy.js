@@ -1,8 +1,7 @@
 
 import {PrivacyStyle} from '../styles/PrivacyStyle'
 import React from 'react'
-import {View,Text,Image,TouchableOpacity,TextInput} from 'react-native'
-import { ScrollView } from 'react-native-gesture-handler'
+import {View,Text,Image,TouchableOpacity,TextInput,ScrollView} from 'react-native'
 
 const Privacy = ({navigation}) => {
   const callFun = () =>

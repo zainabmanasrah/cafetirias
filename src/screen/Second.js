@@ -11,6 +11,10 @@ const handleclick2 = () => {
   navigation.navigate('CustomerReg')
 
 }
+const handleclick3 = () => {
+  navigation.navigate('LoginSeller')
+
+}
 return (
 <View style={SecondStyle.root}>
 
@@ -39,7 +43,7 @@ return (
 
 </Text>
 
-<TouchableOpacity
+<TouchableOpacity onPress={handleclick3}
 style={SecondStyle.but2}>
 <Text style={SecondStyle.text}>
   تسجيل الدخول كبائع 

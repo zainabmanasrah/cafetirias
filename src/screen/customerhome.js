@@ -57,7 +57,7 @@ const handleclick5 = () => {
       'userData',
       JSON.stringify({...userDetails, loggedIn: false}),
     );
-    navigation.navigate('LoginScreen');
+    navigation.navigate('LoginScreencustomer');
   };
 
  

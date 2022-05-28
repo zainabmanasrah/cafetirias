@@ -2,7 +2,6 @@
 import {Helpcenterstyle} from '../styles/Helpcenterstyle'
 import React from 'react'
 import {View,Text,Image,TouchableOpacity,ScrollView} from 'react-native'
-import { TextInput } from 'react-native-gesture-handler'
 
 const Helpcenter = ({navigation}) => {
   const callFun = () =>
@@ -50,21 +49,7 @@ return (
       marginBottom:20,
       textAlign:'right',
       marginTop:30,}}></TextInput>
-      <Text style={{
-    color:'rgb(154, 71, 38)',
-   fontWeight: '400',
-   fontSize: 25,marginLeft:240,
-   }}>
-الرسالة</Text>
-<TextInput placeholder='###############' style={{ borderColor:"rgb(154, 71, 38)",
-      color:"#707070",
-      borderWidth:1,
-      marginLeft:90,
-      width:250,
-      height:120,
-      marginBottom:20,
-      textAlign:'right',
-      marginTop:30,}}></TextInput>
+     
 <TouchableOpacity style={Helpcenterstyle.but}>
 </TouchableOpacity>
 <Text style={Helpcenterstyle.buttext}>
