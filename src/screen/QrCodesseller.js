@@ -22,7 +22,7 @@ if (x.userType===userType)
       {
         if (userType==='student')
         {
-navigation.navigate('Transmision',{
+navigation.navigate('Transfers',{
   data
 })
 
