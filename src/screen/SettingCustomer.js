@@ -4,7 +4,7 @@ import React from 'react'
 import {View,Text,Image,ImageBackground,TouchableOpacity,ScrollView} from 'react-native'
 
 
-const Setting = ({navigation}) => {
+const SettingCustomer = ({navigation}) => {
   const callFun = () =>
 {
     navigation.navigate('Qrcodecustomer')
@@ -19,7 +19,7 @@ const callFun2 = () =>
 }
 const callFun3 = () =>
 {
-    navigation.navigate('Setting')
+    navigation.navigate('SettingCustomer')
 
 
 }
@@ -31,7 +31,7 @@ const callFun4 = () =>
 }
 const callFun5 = () =>
 {
-    navigation.navigate('Privacy')
+    navigation.navigate('PrivacyCustomer')
 
 
 }
@@ -90,4 +90,4 @@ style={Settingstyle.text3}>
 
  }
 
- export default Setting;
+ export default SettingCustomer;

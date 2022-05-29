@@ -3,7 +3,7 @@ import {PrivacyStyle} from '../styles/PrivacyStyle'
 import React from 'react'
 import {View,Text,Image,TouchableOpacity,TextInput,ScrollView} from 'react-native'
 
-const Privacy = ({navigation}) => {
+const PrivacySeller = ({navigation}) => {
   const callFun = () =>
 {
     navigation.navigate('Qrcodecustomer')
@@ -18,7 +18,7 @@ const callFun2 = () =>
 }
 const callFun3 = () =>
 {
-    navigation.navigate('Setting')
+    navigation.navigate('SettingSeller')
 
 
 }
@@ -105,4 +105,4 @@ secureTextEntry={true}
 
  }
 
- export default Privacy;
+ export default PrivacySeller;

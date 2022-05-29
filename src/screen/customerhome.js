@@ -25,7 +25,7 @@ const Customerhome = ({navigation}) => {
   }
  
 const handleclick2 = () => {
-    navigation.navigate('AdsAndOffer')
+    navigation.navigate('AdsAndOfferCustomet')
 
 }
 
@@ -34,7 +34,7 @@ const handleclick3 = () => {
 
 }
 const handleclick4 = () => {
-    navigation.navigate('Setting')
+    navigation.navigate('SettingCustomer')
 
 }
 const handleclick5 = () => {

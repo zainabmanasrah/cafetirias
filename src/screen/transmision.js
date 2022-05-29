@@ -20,7 +20,7 @@ const callFun2 = () =>
 }
 const callFun3 = () =>
 {
-    navigation.navigate('Setting')
+    navigation.navigate('SettingSeller')
 }
     return (
         <ScrollView >

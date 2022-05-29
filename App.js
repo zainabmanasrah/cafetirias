@@ -7,9 +7,13 @@ import Pay from './src/screen/pay';
 import CustomerReg from './src/screen/customerreg';
 import Customerhome from './src/screen/customerhome';
 import Helpcenter from './src/screen/Helpcenter';
-import Privacy from './src/screen/Privacy';
-import AdsAndOffer from './src/screen/AdsAndOffer';
-import Setting from './src/screen/Setting';
+import PrivacySeller from './src/screen/PrivacySeller';
+import PrivacyCustomer from './src/screen/PrivacyCustomer';
+import AdsAndOfferCustomer from './src/screen/AdsAndOfferCustomer';
+import AdsAndOfferSeller from './src/screen/AdsAndOfferSeller';
+import SettingCustomer from './src/screen/SettingCustomer';
+
+import SettingSeller from './src/screen/SettingSeller';
 import Second from './src/screen/Second';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -28,8 +32,10 @@ import Qrcodecustomer from './src/screen/Qrcodecustomer';
 import Qrcodescustomer from './src/screen/Qrcodescustomer';
 import Qrcodeseller from './src/screen/Qrcodeseller';
 import LoginSeller from './src/screen/loginSeller';
+import SellerReg from './src/screen/sellerreg';
 const Stack = createStackNavigator();
 const App = () => {
+  
 
   const [initialRouteName, setInitialRouteName] = React.useState('Second');
 
@@ -79,10 +85,14 @@ const App = () => {
               component={Customerhome}
             />
             <Stack.Screen name="Helpcenter" component={Helpcenter} />
-<Stack.Screen name='AdsAndOffer' component={AdsAndOffer} />
+<Stack.Screen name='AdsAndOfferSeller' component={AdsAndOfferSeller} />
+<Stack.Screen name='AdsAndOfferCustomer' component={AdsAndOfferCustomer} />
+
 <Stack.Screen name='Qrcodeseller' component={Qrcodeseller} />
 <Stack.Screen name='Qrcodecustomer' component={Qrcodecustomer} />
-<Stack.Screen name='Setting' component={Setting} />
+<Stack.Screen name='SettingSeller' component={SettingSeller} />
+<Stack.Screen name='SettingCustomer' component={SettingCustomer} />
+
 <Stack.Screen name='Transmision' component={Transmision} />
 <Stack.Screen name='Point' component={Point} />
 <Stack.Screen name='Sellerhomes' component={Sellerhomes} />
@@ -90,13 +100,16 @@ const App = () => {
 <Stack.Screen name='PointOffer' component={PointOffer} />
 <Stack.Screen name='Transfers' component={Transfers} />
 <Stack.Screen name='Paybyoffer' component={Paybyoffer} />
-<Stack.Screen name='Privacy' component={Privacy} />
+<Stack.Screen name='PrivacySeller' component={PrivacySeller} />
+<Stack.Screen name='PrivacyCustomer' component={PrivacyCustomer} />
+
 <Stack.Screen name='Pay' component={Pay} />
 <Stack.Screen name='Qrcodesseller' component={Qrcodesseller} userType={'student'} />
 <Stack.Screen name='Qrcodescustomer' component={Qrcodescustomer} userType={'seller'} />
 <Stack.Screen name='Second' component={Second} />
 <Stack.Screen name='LoginSeller' component={LoginSeller} />
 <Stack.Screen name='Withdraw' component={Withdraw} />
+<Stack.Screen name='SellerReg' component={SellerReg} />
 
 <Stack.Screen name='Home' component={Home} />
 
@@ -112,7 +125,7 @@ const App = () => {
     </NavigationContainer>
     
   );
-  
+ 
 };
 
 

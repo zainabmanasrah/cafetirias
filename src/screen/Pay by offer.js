@@ -18,7 +18,7 @@ const Paybyoffer = ({navigation}) => {
   }
   const callFun3 = () =>
   {
-      navigation.navigate('Setting')
+      navigation.navigate('SettingCustomer')
   
   
   }

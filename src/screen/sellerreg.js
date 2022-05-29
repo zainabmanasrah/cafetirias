@@ -14,7 +14,7 @@ import Button from '../component/button';
 import Input from '../component/input';
 import Loader from '../component/loader';
 
-const CustomerReg = ({navigation}) => {
+const SellerReg = ({navigation}) => {
   const [inputs, setInputs] = React.useState({
     email: '',
     fullname: '',
@@ -65,7 +65,7 @@ const CustomerReg = ({navigation}) => {
       try {
         setLoading(false);
         AsyncStorage.setItem('userData', JSON.stringify(inputs));
-        navigation.navigate('LoginScreencustomer');
+        navigation.navigate('LoginSeller');
       } catch (error) {
         Alert.alert('Error', 'Something went wrong');
       }
@@ -84,7 +84,7 @@ const CustomerReg = ({navigation}) => {
       <ScrollView
         contentContainerStyle={{paddingTop: 50, paddingHorizontal: 20}}>
         <Text style={{color: COLORS.brwon, marginLeft:30,textAlign:'center',fontSize: 30,marginTop:0}}>
-    إنشاء حساب للزبون
+    إنشاء حساب للبائع
         </Text>
        
         <View style={{marginVertical: 20}}>
@@ -116,7 +116,13 @@ const CustomerReg = ({navigation}) => {
             placeholder="انقر هنا لكتابة الايميل............"
             error={errors.email}
           />
-
+<Text style={{color:COLORS.brwon,marginLeft:250,fontSize:20,padding:10}}>رقم الكافتيريا</Text>
+<Input
+            keyboardType="numeric"
+            onChangeText={text => handleOnchange(text, 'phone')}
+            onFocus={() => handleError(null, 'phone')}
+            placeholder="انقر هنا لكتابة رقم الكافتيريا ........"
+          />
           <Text style={{color:COLORS.brwon,marginLeft:270,fontSize:20,padding:10}}>كلمة السر </Text>
 
           <Input
@@ -139,7 +145,7 @@ const CustomerReg = ({navigation}) => {
           />
           <Button title="إنشاء حساب" onPress={validate} />
           <Text
-            onPress={() => navigation.navigate('LoginScreencustomer')}
+            onPress={() => navigation.navigate('LoginSeller')}
             style={{
               color: COLORS.brwon,
               fontWeight: 'bold',
@@ -156,4 +162,4 @@ const CustomerReg = ({navigation}) => {
   );
 };
 
-export default CustomerReg;
+export default SellerReg;

@@ -7,8 +7,6 @@ import { TransmissionStyle } from '../styles/transmissionstyle'
             const callFun = () =>
 {
     navigation.navigate('Qrcodecustomer')
-
-
 }
 const callFun2 = () =>
 {
@@ -18,7 +16,7 @@ const callFun2 = () =>
 }
 const callFun3 = () =>
 {
-    navigation.navigate('Setting')
+    navigation.navigate('SettingCustomer')
 
 
 }

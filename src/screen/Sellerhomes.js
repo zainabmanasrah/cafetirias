@@ -19,13 +19,13 @@ const Sellerhomes = ({navigation}) => {
   }
   const callFun3 = () =>
   {
-      navigation.navigate('Setting')
+      navigation.navigate('SettingSeller')
   
   
   }
  
 const handleclick2 = () => {
-    navigation.navigate('AdsAndOffer')
+    navigation.navigate('AdsAndOfferSeller')
 
 }
 
@@ -34,7 +34,7 @@ const handleclick3 = () => {
 
 }
 const handleclick4 = () => {
-    navigation.navigate('Setting')
+    navigation.navigate('SettingSeller')
 
 }
 

@@ -10,13 +10,13 @@ const Transfers = ({navigation}) => {
   }
   const callFun2 = () =>
   {
-      navigation.navigate('Customerhome')
+      navigation.navigate('Sellerhomes')
   
   
   }
   const callFun3 = () =>
   {
-      navigation.navigate('Setting')
+      navigation.navigate('SettingSeller')
   
   
   }

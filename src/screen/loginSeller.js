@@ -7,7 +7,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Loader from '../component/loader';
 
 const LoginSeller = ({navigation}) => {
-  const [inputs, setInputs] = React.useState({fullname: 'Ahmad', password: '1234'});
+  const [inputs, setInputs] = React.useState({fullname: '', password: ''});
   const [errors, setErrors] = React.useState({});
   const [loading, setLoading] = React.useState(false);
 
@@ -31,13 +31,18 @@ const LoginSeller = ({navigation}) => {
     setLoading(true);
     setTimeout(async () => {
       setLoading(false);
-      if (A) {
+      let userData = await AsyncStorage.getItem('userData');
+      if (userData) {
+        userData = JSON.parse(userData);
         if (
-          inputs.fullname == 'Ahmad' &&
-          inputs.password == '1234'
+          inputs.fullname == userData.fullname &&
+          inputs.password == userData.password
         ) {
           navigation.navigate('Sellerhomes');
-          
+          AsyncStorage.setItem(
+            'userData',
+            JSON.stringify({...userData, loggedIn: true}),
+          );
         } else {
           Alert.alert('Error', 'Invalid Details');
         }
@@ -83,7 +88,16 @@ const LoginSeller = ({navigation}) => {
             password
           />
           <Button title="تسجيل الدخول" onPress={validate} />
-          
+          <Text
+            onPress={() => navigation.navigate('SellerReg')}
+            style={{
+              color: COLORS.brwon,
+              fontWeight: 'bold',
+              textAlign: 'center',
+              fontSize: 16,
+              marginTop:35
+            }}>
+ليس لديك حساب؟ سجل          </Text>
         </View>
       </View>
     </SafeAreaView>

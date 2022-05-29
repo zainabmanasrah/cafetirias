@@ -3,22 +3,22 @@ import {AdsAndOfferStyle} from '../styles/AdsAndOfferStyle'
 import React from 'react'
 import {View,Text,Image,TextInput, ScrollView,TouchableOpacity} from 'react-native'
 
-const AdsAndOffer = ({navigation}) => {
+const AdsAndOfferSeller = ({navigation}) => {
   const callFun = () =>
   {
-      navigation.navigate('Qrcodecustomer')
+      navigation.navigate('Qrcodeseller')
   
   
   }
   const callFun2 = () =>
   {
-      navigation.navigate('Customerhome')
+      navigation.navigate('Sellerhomes')
   
   
   }
   const callFun3 = () =>
   {
-      navigation.navigate('Setting')
+      navigation.navigate('SettingSeller')
   
   
   }
@@ -79,4 +79,4 @@ return (
 
  }
 
- export default AdsAndOffer;
+ export default AdsAndOfferSeller;

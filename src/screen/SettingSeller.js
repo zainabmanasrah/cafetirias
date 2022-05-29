@@ -1,17 +1,15 @@
 
-import {QrcodeStyle} from '../styles/QrcodeStyle'
+import {Settingstyle} from '../styles/SettingStyle'
 import React from 'react'
-import {View,Text,Image,TouchableOpacity,TextInput,ImageBackground,ScrollView} from 'react-native'
-import QRCode from 'react-native-qrcode-svg';
+import {View,Text,Image,ImageBackground,TouchableOpacity,ScrollView} from 'react-native'
 
-const Qrcodecustomer = ({navigation}) => {
-  const n = () =>
-  {
-      navigation.navigate('Qrcodescustomer',{userType:'seller'})   
-  }
+
+const SettingSeller = ({navigation}) => {
   const callFun = () =>
 {
     navigation.navigate('Qrcodecustomer')
+
+
 }
 const callFun2 = () =>
 {
@@ -21,38 +19,52 @@ const callFun2 = () =>
 }
 const callFun3 = () =>
 {
-    navigation.navigate('SettingCustomer')
+    navigation.navigate('SettingSeller')
+
+
+}
+const callFun4 = () =>
+{
+    navigation.navigate('Helpcenter')
+
+
+}
+const callFun5 = () =>
+{
+    navigation.navigate('PrivacySeller')
 
 
 }
 return (
   <ScrollView>
 
-<View style={QrcodeStyle.root}>
+<View style={Settingstyle.root}>
+
 <Image
-  style={QrcodeStyle.image}
-  source={require('../assets/qrc.png')}
+  style={Settingstyle.image}
+  source={require('../assets/set.png')}
 />
-<Text style={QrcodeStyle.text}>
-الكود الخاص بك </Text>
-
-<View  style={QrcodeStyle.qrcodebackgroung}>
-<QRCode
-      value="http://awesome.link.qr"
-      
-    />
-
-</View>
 
 
+<Text onPress={callFun4} style={Settingstyle.text}>
+مركز المساعدة
+</Text>
 
-<TouchableOpacity onPress={n} style={QrcodeStyle.but}>
-<Text style={QrcodeStyle.buttext}>
-مسح QR Code</Text>
-</TouchableOpacity>
+<Text onPress={callFun5} 
+style={Settingstyle.text2}>
+الامان و الخصوصية
+
+</Text>
+
+<Text 
+
+style={Settingstyle.text3}>
+تسجيل الخروج
+
+</Text>
 
 <View >
-    <TouchableOpacity style={{marginTop:40,justifyContent:'center',flexDirection:'row',justifyContent:'space-around',borderRadius:20,width:420,height:70,backgroundColor:'#FAF4EE'}} activeOpacity = { .5 } onPress={callFun}>
+    <TouchableOpacity style={{marginTop:80,justifyContent:'center',flexDirection:'row',justifyContent:'space-around',borderRadius:20,width:420,height:70,backgroundColor:'#FAF4EE'}} activeOpacity = { .5 } onPress={callFun}>
         <Image source={require('../assets/qr.png')}
         style={{width:50,height:50,marginRight:250,marginTop:0}}
 />
@@ -72,10 +84,10 @@ return (
     </TouchableOpacity>
 </View>
 </View>
-
   </ScrollView>
+
 )
 
  }
 
- export default Qrcodecustomer;
+ export default SettingSeller;

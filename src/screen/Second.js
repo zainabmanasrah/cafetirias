@@ -11,6 +11,10 @@ const handleclick2 = () => {
   navigation.navigate('CustomerReg')
 
 }
+const handleclick4 = () => {
+  navigation.navigate('SellerReg')
+
+}
 const handleclick3 = () => {
   navigation.navigate('LoginSeller')
 
@@ -50,6 +54,13 @@ style={SecondStyle.but2}>
 </Text>
 </TouchableOpacity>
 
+<Text  style={SecondStyle.Container}>
+لا تمتلك حساب ؟ 
+<Text onPress={handleclick4} style={{fontWeight: '700',textDecorationLine: 'underline'}}>
+  إنشاء حساب كبائع 
+</Text>
+
+</Text>
 
 
 

@@ -1,12 +1,12 @@
 
-import {Helpcenterstyle} from '../styles/Helpcenterstyle'
+import {AdsAndOfferStyle} from '../styles/AdsAndOfferStyle'
 import React from 'react'
-import {View,Text,Image,TouchableOpacity,ScrollView,TextInput} from 'react-native'
+import {View,Text,Image,TextInput, ScrollView,TouchableOpacity} from 'react-native'
 
-const Helpcenter = ({navigation}) => {
+const AdsAndOfferCustomer = ({navigation}) => {
   const callFun = () =>
   {
-      navigation.navigate('Noti')
+      navigation.navigate('Qrcodecustomer')
   
   
   }
@@ -23,29 +23,38 @@ const Helpcenter = ({navigation}) => {
   
   }
 return (
-  <ScrollView>
+<ScrollView >
 
-<View style={Helpcenterstyle.root}>
-
+<View style={AdsAndOfferStyle.root}>
 <Image
-  style={Helpcenterstyle.image}
-  source={require('../assets/D3.png')}
+  style={AdsAndOfferStyle.image}
+  source={require('../assets/ads.png')}
 />
-<Text style={Helpcenterstyle.text}>
-تواصل معنا عبر الايميل</Text>
-<Text style={{marginBottom:-140,
-    color:'rgb(154, 71, 38)',
-   fontWeight: '400',
-   fontSize: 25,marginLeft:150,
-   }}>
-     admin@gmail.com
+
+
+
+<Text style={AdsAndOfferStyle.text}>
+وصف العرض
+
 </Text>
 
-   
+
+<Text style={AdsAndOfferStyle.text}>
+
+وصف العرض
+</Text>
+
+<Text style={AdsAndOfferStyle.text}>
+وصف العرض
+</Text>
+
+
+
+</View>
 
 <View >
-    <TouchableOpacity style={{marginTop:350,justifyContent:'center',flexDirection:'row',justifyContent:'space-around',borderRadius:20,width:420,height:70,backgroundColor:'#FAF4EE'}} activeOpacity = { .5 } onPress={callFun}>
-        <Image source={require('../assets/not.png')}
+    <TouchableOpacity style={{justifyContent:'center',flexDirection:'row',justifyContent:'space-around',borderRadius:20,width:420,height:70,backgroundColor:'#FAF4EE'}} activeOpacity = { .5 } onPress={callFun}>
+        <Image source={require('../assets/qr.png')}
         style={{width:50,height:50,marginRight:250,marginTop:0}}
 />
 
@@ -63,11 +72,11 @@ return (
 
     </TouchableOpacity>
 </View>
-</View>
+</ScrollView>
 
-  </ScrollView>
+
 )
 
  }
 
- export default Helpcenter;
+ export default AdsAndOfferCustomer;
