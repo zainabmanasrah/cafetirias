@@ -19,13 +19,13 @@ const Customerhome = ({navigation}) => {
   }
   const callFun3 = () =>
   {
-      navigation.navigate('Setting')
+      navigation.navigate('SettingCustomer')
   
   
   }
  
 const handleclick2 = () => {
-    navigation.navigate('AdsAndOfferCustomet')
+    navigation.navigate('AdsAndOfferCustomer')
 
 }
 
